@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    const arr = [3,1,2,3,4,4];
+        const filter = (arr)=>{
+            let newarr = [];
+            let currentElement;
+            let existElement = {}
+            for(let i = 0; i < arr.length; i++){
+                currentElement = arr[i];
+                if(!existElement[currentElement]){ 
+                  newarr.push(arr[i]) 
+                  existElement[currentElement] = true;
+                }
+            }
+            return newarr
+        }
+    console.log(filter(arr))
+</script>
+</html>
+
+
+
